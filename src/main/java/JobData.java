@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by LaunchCode
  */
-public class JobData {
+public class   JobData {
 
     private static final String DATA_FILE = "src/main/resources/job_data.csv";
     private static boolean isDataLoaded = false;
