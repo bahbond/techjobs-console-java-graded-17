@@ -103,6 +103,7 @@ public class   JobData {
 
         //
         // TODO - implement this method
+        // TODO - case sensitivity
         // Array List "JOBS" from HashMap Of Columns..
         ArrayList<HashMap<String,String>> jobs = new ArrayList<>();
         //For each row in "allJobs"
@@ -111,7 +112,7 @@ public class   JobData {
             //For Each Field in rows(KEY) values
 
             for(String fields : row.values()){
-                if (fields.contains(value)){
+                if (fields.toLowerCase().contains(value.toLowerCase())){
                     jobs.add(row);
                 }
 
