@@ -62,7 +62,8 @@ public class TechJobs {
 
                 if (searchField.equals("all")) {
                     printJobs(JobData.findByValue(searchTerm));
-                } else {
+                }
+                else {
                     printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
                 }
             }
@@ -132,7 +133,7 @@ public class TechJobs {
             }
         }
     else{
-        System.out.println("No results");
+        System.out.print("No results");
     }
     }
     }
